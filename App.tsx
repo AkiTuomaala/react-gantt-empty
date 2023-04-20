@@ -30,9 +30,9 @@ export default function App() {
   const [curProject, setCurProject] = React.useState([]);
 
   const [filters, setFilter] = React.useState({
-    ready: '1',
-    min: addDays(dateNow, -1),
-    max: addDays(dateNow, 6),
+    ready: '0',
+    min: addDays(dateNow, -100),
+    max: addDays(dateNow, 100),
   });
 
   const filterTasks = (task) => {
@@ -89,7 +89,7 @@ export default function App() {
         header="Customer"
         tasks={filterTasks(tasks.customer)}
         view={view}
-        // columnWidth={10}
+        columnWidth={100}
         setTasks={setTasks}
         setCurProject={setCurProject}
         isChecked={isChecked}

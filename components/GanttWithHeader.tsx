@@ -115,7 +115,7 @@ export const GanttWithHeader = ({
         onDoubleClick={handleDblClick}
         onSelect={handleSelect}
         onExpanderClick={handleExpanderClick}
-        listCellWidth={isChecked ? '200px' : ''}
+        listCellWidth={''}
         ganttHeight={500}
         columnWidth={scroll}
       />
